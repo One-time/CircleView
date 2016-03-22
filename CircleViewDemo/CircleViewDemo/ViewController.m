@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     CircleView *circle = [[CircleView alloc]initWithFrame:CGRectMake(0, 44, 100, 100)];
+    //暂停动画，通过pause来控制动画的开始暂停
     [circle setPaused:NO];
+    
     [self.view addSubview:circle];
     // Do any additional setup after loading the view, typically from a nib.
 }
